@@ -20,7 +20,7 @@
 .special__item {
     @include tablet {
         margin: 15px;
-        flex-basis: calc((100% - 60px) / 2);
+        width: calc((100% - 60px) / 2);
       }
     @include dekstop {
       width: 270px;

@@ -4,7 +4,13 @@
   flex-wrap: wrap;
 }
 .card__item {
-  flex-basis: calc((100% - 2 * 30px) / 3);
+  @include tablet {
+  width: calc((100% - 2 * 30px) / 2);  
+}
+@include dekstop {
+  width: calc((100% - 2 * 30px) / 3);
+}
+  width: 100%;
   margin-right: auto;
   margin-bottom: 30px;
   gap: 30px;
