@@ -34,9 +34,6 @@
   @include tablet {
     margin: 15px;
     width: 354px;
-    // flex-basis: calc((100% - 60px) / 2);
-    // margin-bottom: 30px;
-    // margin-right: 30px;
   }
   @include dekstop {
     width: 270px;

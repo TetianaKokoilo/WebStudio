@@ -4,11 +4,16 @@
 }
 
 .address {
-  display: inline-block;
-  width: 330px;
-  width: 231px;
+  display: flex;
+  // width: 330px;
+  width: 232px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .address__text {
+  @extend %link;
   margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
@@ -18,6 +23,7 @@
 }
 .сommunications {
   @extend %list;
+  text-align: center;
 }
 
 .сommunications__email,

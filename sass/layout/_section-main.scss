@@ -19,8 +19,23 @@
   margin-bottom: 30px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+    line-height: 1.61;
+  @include mobile {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include tablet {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;  
+  }
+  @include dekstop {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;  
+  }
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;

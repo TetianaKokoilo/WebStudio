@@ -18,10 +18,12 @@
     }
 
   .main & {
-    width: 696px;
+    @include dekstop {
+      width: 696px;
+    }
   }
   .footer & {
-    display: flex;
+    // display: flex;
     align-items: baseline;
   }
   

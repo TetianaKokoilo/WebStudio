@@ -259,7 +259,7 @@ summary {
 }
 
 .сommunications__email,
-.сommunications__tel, .contact, .label__text, .header__web, .logo__web, .lists__link {
+.сommunications__tel, .address__text, .contact, .label__text, .header__web, .logo__web, .lists__link {
   text-decoration: none;
 }
 
@@ -359,11 +359,12 @@ img {
     width: 1200px;
   }
 }
-.main .container {
-  width: 696px;
+@media screen and (min-width: 1200px) {
+  .main .container {
+    width: 696px;
+  }
 }
 .footer .container {
-  display: flex;
   align-items: baseline;
 }
 
@@ -433,15 +434,20 @@ img {
   bottom: 0;
 }
 
+.logo {
+  margin-bottom: 60px;
+}
+
 .logo__web {
   display: block;
   margin-bottom: 20px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #2196f3;
 }
 
@@ -449,9 +455,10 @@ img {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #ffffff;
 }
 
@@ -816,12 +823,33 @@ img {
 .main__title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 480px) {
+  .main__title {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__title {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .main__btn {
@@ -1184,9 +1212,12 @@ img {
 }
 
 .address {
-  display: inline-block;
-  width: 330px;
-  width: 231px;
+  display: flex;
+  width: 232px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .address__text {
@@ -1196,6 +1227,10 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.сommunications {
+  text-align: center;
 }
 
 .сommunications__email,
