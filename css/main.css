@@ -928,7 +928,23 @@ img {
 }
 
 .work {
+  display: none;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 480px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 
 .title {
