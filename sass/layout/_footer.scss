@@ -11,6 +11,9 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  @include dekstop {
+    display: block;
+  }
 }
 .address__text {
   @extend %link;
@@ -24,6 +27,9 @@
 .сommunications {
   @extend %list;
   text-align: center;
+  @include dekstop {
+    text-align: start;
+  }
 }
 
 .сommunications__email,
@@ -59,10 +65,18 @@
 }
 
 .join {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  @include tablet {
+    padding-top: 12px;
+  }
+  @include dekstop {
+    margin-right: 70px;  
+  }
 }
 .join__title {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -70,6 +84,12 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $main-title-color;
+  @include dekstop {
+    display: block;
+    text-align: start;
+  }
+ 
+
 }
 
 .web {
@@ -92,5 +112,13 @@
 }
 
 .subscribe {
-  margin-left: 93px;
+  @include tablet {
+  margin-left: auto;
+  margin-right: auto;  
+}
+  // width: 570px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // margin-left: 93px;
 }

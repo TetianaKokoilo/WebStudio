@@ -23,8 +23,14 @@
     }
   }
   .footer & {
-    // display: flex;
-    align-items: baseline;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+    }
+    @include dekstop {
+      display: flex;
+    }
   }
   
 }

@@ -1,4 +1,14 @@
-.logo {
+.logo { 
+    @include tablet {
+        display: inline-block;
+        margin-left: 75px;
+        margin-right: 165px;
+    }
+    @include dekstop {
+        margin-left: 0px;
+        margin-right: 70px;
+        
+    }
     margin-bottom: 60px;
 }
 .logo__web {
@@ -16,6 +26,10 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: $accent-color;
+    @include dekstop {
+        text-align: start;
+        width: 45px;
+    }
 }
 
 .logo__studio {

@@ -1,7 +1,18 @@
 .form {
   display: block;
+  @include tablet {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  @include dekstop {
+    width: 570px;
+  }
 }
 .form__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -9,13 +20,25 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $main-title-color;
+  @include tablet {
+    width: 450px;
+  }
+  @include dekstop {
+    padding-top: 12px;
+    justify-content: flex-start;
+  }
 }
 
 .newsletter {
-  display: flex;
+  display: block;
+  @include dekstop {
+  display: flex; 
+  }
 }
 .newsletter__email {
-  width: 358px;
+  width: 100%;
+  margin-bottom: 20px;
+  // width: 358px;
   height: 50px;
   padding-left: 16px;
   padding-top: 15px;
@@ -31,7 +54,18 @@
   &:focus {
     border: 1px solid $accent-color;
   }
+  @include tablet {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  @include dekstop {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
+
 
 .newsletter__btn {
   margin-left: 12px;
@@ -40,6 +74,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
