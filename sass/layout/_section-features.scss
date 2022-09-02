@@ -1,28 +1,28 @@
 .features {
   padding: 60px 0;
-  @media screen and (min-width: 1200px) {
+  @include dekstop {
     padding: 94px 0;
 }
 }
 
 .special {
   @extend %list;
-  @media screen and (min-width: 768px){
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
-  @media screen and (min-width: 1200px) {
+  @include dekstop {
     flex-wrap: nowrap;
   }
 }
 
 .special__item {
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin: 15px;
         flex-basis: calc((100% - 60px) / 2);
       }
-    @media screen and (min-width: 1200px) {
+    @include dekstop {
       width: 270px;
       }  
         width: 100%;
@@ -57,7 +57,7 @@
   text-transform: uppercase;
   text-align: center;
   color: $title-text-color;
-    @media screen and (min-width: 768px) {
+    @include tablet {
         text-align: start;
       }
 
