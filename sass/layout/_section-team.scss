@@ -28,7 +28,7 @@
   }
 }
 .cards__item {
-  @media screen and (max-width: 479px) {
+  @media screen and (min-width: 479px), (max-width: 767px) {
     margin-bottom: 30px;
   }
   @include tablet {

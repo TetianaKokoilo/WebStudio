@@ -1,24 +1,38 @@
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.customers__title {
+  margin-top: 0;
+  @include mobile {
+    margin-bottom: 30px;
+  }
+  // margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
 }
 .icon {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 0;
   margin: 0;
   list-style: none;
+  gap: 30px;
 }
-.icon__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 
 .companies {
   padding: 0;
   margin: 0;
   outline: transparent;
-  width: 170px;
+  width: 210px;
   height: 92px;
   display: flex;
   align-items: center;
@@ -26,6 +40,12 @@
   border: 1px solid $svg-color;
   border-radius: 4px;
   fill: $svg-color;
+  @include tablet {
+    width: 226px;
+  }
+  @include dekstop {
+    width: 170px;
+  }
 
   transition: fill $transition-duration $transition-timing-function,
     border $transition-duration $transition-timing-function;
@@ -36,7 +56,10 @@
   }
 }
 
-.companies__icon,
+.companies__icon {
+  align-items: center;
+}
+
 .web__icon {
   align-items: center;
 }
