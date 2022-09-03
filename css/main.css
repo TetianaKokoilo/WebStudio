@@ -411,7 +411,7 @@ img {
 }
 
 .navigation {
-  display: flex;
+  display: none;
   margin-left: 93px;
   align-items: center;
   margin-right: auto;
@@ -739,7 +739,7 @@ img {
 }
 
 .checklist {
-  display: flex;
+  display: none;
   margin-left: auto;
   gap: 30px;
 }
@@ -768,6 +768,15 @@ img {
 .header {
   border: 1px solid #ececec;
   background-color: #ffffff;
+}
+
+.menu-open {
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 .card {
