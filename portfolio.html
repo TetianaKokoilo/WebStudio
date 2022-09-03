@@ -74,7 +74,18 @@
             <li class="card__item">
               <a href="#" class="card__link">
                 <div class="product">
-                  <img src="./images/portfolio-img-1.jpg" alt="website" width="370" height="294" />
+                  <picture>
+                    <source srcset="./images/portfolio-img-1-dek-1x.jpg 1x,
+                    ./images/portfolio-img-1-dek-2x.jpg 2x" 
+                    media="(min-width: 1200px)" />
+                    <source srcset="./images/portfolio-img-1-tab-1x.jpg 1x,
+                    ./images/portfolio-img-1-tab-2x.jpg 2x" 
+                    media="(min-width: 768px)" />
+                    <source srcset="./images/portfolio-img-1-mob-1x.jpg 1x,
+                    ./images/portfolio-img-1-mob-2x.jpg 2x" 
+                    media="(max-width: 767px)" />
+                    <img src="./images/portfolio-img-1-mob-1x.jpg" alt="website" width="370" height="294" />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
