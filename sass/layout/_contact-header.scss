@@ -1,21 +1,35 @@
 .checklist {
   @extend %list;
   display: none;
-  // display: flex;
+  @include tablet {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-left: 90px;
+  }
   margin-left: auto;
-  gap: 30px;
+  @include dekstop {
+  gap: 30px;  
+  }
 }
-
+.ckecklist__item:not(:last-child) {
+  margin-bottom: 10px;
+}
 .contact {
   @extend %link;
   display: flex;
+  @include dekstop {
   padding: 32px 0;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  }
   align-items: center;
 
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: $primary-text-color;
 
   transition: color $transition-duration $transition-timing-function;

@@ -11,8 +11,12 @@
   transform: translate(-50%, -50%) scale(0);
 }
 .modal {
+  width: 450px;
+  height: 609px;
+  @include dekstop {
   width: 528px;
-  min-height: 581px;
+  height: 581px;  
+  }
   background-color: $background-color;
   position: absolute;
   border-radius: 4px;

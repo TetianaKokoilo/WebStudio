@@ -14,7 +14,13 @@
   border: none;
   background-color: $background-color;
   cursor: pointer;
+  @include tablet {
+    display: none;
+  }
+  transition: visibility $transition-duration $transition-timing-function;;
+    
 }
+
 .mob-menu {
   position: fixed;
   z-index: 2;
@@ -31,10 +37,10 @@
     justify-content: space-between;
     overflow: auto;
   }
+  transition: visibility $transition-duration $transition-timing-function;
 }
 
 .menu-close {
-  width: 40px;
   display: block;
   margin-left: auto;
   margin-bottom: 8px;
@@ -117,4 +123,11 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accent-color;
+}
+.mob-menu.is-hidden .container {
+  transform: translate(-50%, -50%) scale(0);
+}
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
 }
