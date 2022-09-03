@@ -157,7 +157,18 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="cards">
             <li class="cards__item">
-              <img src="./images/team-img-4.jpg" alt="Product Designer" width="270" height="260" />
+              <picture>
+                <source srcset="./images/team-img-4-dek-1x.jpg 1x,
+                ./images/team-img-4-dek-2x.jpg 2x"
+                media="(min-width: 1200px)"/>
+                <source srcset="./images/team-img-4-tab-1x.jpg 1x,
+                ./images/team-img-4-tab-2x.jpg 2x" 
+                media="(min-width: 768px)"/>
+                <source srcset="./images/team-img-4-mob-1x.jpg 1x,
+                ./images/team-img-4-mob-2x.jpg 2x" 
+                media="(max-width: 767px)"/>
+                <img src="./images/team-img-4-mob-1x.jpg" alt="Product Designer" width="270" height="260" />
+              </picture>
               <div class="worker">
                 <h3 class="worker__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="worker__work">Product Designer</p>
@@ -190,12 +201,18 @@
               </div>
             </li>
             <li class="cards__item">
-              <img
-                src="./images/team-img-5.jpg"
-                alt="Frontend Developer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team-img-5-dek-1x.jpg 1x,
+                ./images/team-img-5-dek-2x.jpg 2x" 
+                media="(min-width: 1200px)" />
+                <source srcset="./images/team-img-5-tab-1x.jpg 1x,
+                ./images/team-img-5-tab-2x.jpg 2x" 
+                media="(min-width: 768px)" />
+                <source srcset="./images/team-img-5-mob-1x.jpg 1x,
+                ./images/team-img-5-mob-2x.jpg 2x" 
+                media="(max-width: 767px)" />
+                <img src="./images/team-img-5-mob-1x.jpg" alt="Product Designer" width="270" height="260" />
+              </picture>
               <div class="worker">
                 <h3 class="worker__name">Ольга Рєпіна</h3>
                 <p lang="en" class="worker__work">Frontend Developer</p>
@@ -228,7 +245,18 @@
               </div>
             </li>
             <li class="cards__item">
-              <img src="./images/team-img-6.jpg" alt="Marketing" width="270" height="260" />
+              <picture>
+                <source srcset="./images/team-img-6-dek-1x.jpg 1x,
+                ./images/team-img-6-dek-2x.jpg 2x" 
+                media="(min-width: 1200px)" />
+                <source srcset="./images/team-img-6-tab-1x.jpg 1x,
+                ./images/team-img-6-tab-2x.jpg 2x"
+                media="(min-width: 768px)" />
+                <source srcset="./images/team-img-6-mob-1x.jpg 1x,
+                ./images/team-img-6-mob-2x.jpg 2x" 
+                media="(max-width: 767px)" />
+                <img src="./images/team-img-6-mob-1x.jpg" alt="Product Designer" width="270" height="260" />
+              </picture>
               <div class="worker">
                 <h3 class="worker__name">Микола Тарасов</h3>
                 <p lang="en" class="worker__work">Marketing</p>
@@ -261,7 +289,18 @@
               </div>
             </li>
             <li class="cards__item">
-              <img src="./images/team-img-7.jpg" alt="UI Designer" width="270" height="260" />
+              <picture>
+                <source srcset="./images/team-img-7-dek-1x.jpg 1x,
+                ./images/team-img-7-dek-2x.jpg 2x" 
+                media="(min-width: 1200px)" />
+                <source srcset="./images/team-img-7-tab-1x.jpg 1x,
+                ./images/team-img-7-tab-2x.jpg 2x" 
+                media="(min-width: 768px)" />
+                <source srcset="./images/team-img-7-mob-1x.jpg 1x,
+                ./images/team-img-7-mob-2x.jpg 2x" 
+                media="(max-width: 767px)" />
+                <img src="./images/team-img-7-mob-1x.jpg" alt="Product Designer" width="270" height="260" />
+              </picture>
               <div class="worker">
                 <h3 class="worker__name">Михайло Єрмаков</h3>
                 <p lang="en" class="worker__work">UI Designer</p>
