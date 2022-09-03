@@ -14,6 +14,9 @@
 }
 .ckecklist__item:not(:last-child) {
   margin-bottom: 10px;
+  @include dekstop {
+    margin-bottom: 0px;
+  }
 }
 .contact {
   @extend %link;

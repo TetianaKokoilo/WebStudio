@@ -59,6 +59,7 @@
   @extend %list;
 }
 
+
 .mob-menu-lists__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -70,8 +71,12 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: $title-text-color;
+  transition: color $transition-duration $transition-timing-function;
+  &:hover,
+  &:focus {
+  color: $accent-color;
+  }
 }
-
 .mob-menu-lists__link--current {
   color: $accent-color;
 }
@@ -90,6 +95,11 @@
   letter-spacing: 0.02em;
   color: $accent-color;
   margin-bottom: 33px;
+  transition: color $transition-duration $transition-timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .mob-menu-email {
   @extend %link;
@@ -98,6 +108,11 @@
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: $primary-text-color;
+  transition: color $transition-duration $transition-timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .mob-menu-site {
@@ -123,10 +138,15 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accent-color;
+  transition: color $transition-duration $transition-timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
-.mob-menu.is-hidden .container {
-  transform: translate(-50%, -50%) scale(0);
-}
+// .mob-menu.is-hidden .container {
+//   transform: translate(-50%, -50%) scale(0);
+// }
 .is-hidden {
   visibility: hidden;
   pointer-events: none;
