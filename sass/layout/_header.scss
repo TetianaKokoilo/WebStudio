@@ -14,9 +14,11 @@
   border: none;
   background-color: $background-color;
   cursor: pointer;
+  transition: fill $transition-duration $transition-timing-function;
+  
   &:hover,
   &:focus {
-    color: $accent-color;
+    fill: $accent-color;
   }
   @include tablet {
     display: none;
@@ -42,13 +44,16 @@
     justify-content: space-between;
     overflow: auto;
   }
-  transition: visibility $transition-duration $transition-timing-function;
+  transform: translate(0%, 0%) scale(1);
+  transition: visibility $transition-duration $transition-timing-function, 
+  transform $transition-duration $transition-timing-function;
   @include tablet {
     display: none;
   }
   @include dekstop {
     display: none;
   }
+  
 }
 
 .menu-close {
@@ -156,6 +161,10 @@
     color: $accent-color;
   }
 }
-// .mob-menu.is-hidden .container {
-//   transform: translate(-50%, -50%) scale(0);
-// }
+.mob-menu.is-hidden {
+  transform: translate(0%, 0%) scale(0);
+}
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
