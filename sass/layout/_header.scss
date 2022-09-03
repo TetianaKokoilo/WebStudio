@@ -14,9 +14,14 @@
   border: none;
   background-color: $background-color;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
   @include tablet {
     display: none;
   }
+  
   transition: visibility $transition-duration $transition-timing-function;;
     
 }
@@ -38,6 +43,12 @@
     overflow: auto;
   }
   transition: visibility $transition-duration $transition-timing-function;
+  @include tablet {
+    display: none;
+  }
+  @include dekstop {
+    display: none;
+  }
 }
 
 .menu-close {
@@ -52,6 +63,7 @@
   &:focus {
     fill: $accent-color;
   }
+  
 }
 
 
@@ -147,7 +159,3 @@
 // .mob-menu.is-hidden .container {
 //   transform: translate(-50%, -50%) scale(0);
 // }
-.is-hidden {
-  visibility: hidden;
-  pointer-events: none;
-}
