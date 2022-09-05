@@ -1358,7 +1358,12 @@ img {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    gap: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .cards {
@@ -1378,14 +1383,26 @@ img {
 }
 @media screen and (min-width: 768px) {
   .cards__item {
-    margin: 15px;
     width: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .cards__item {
+    margin-bottom: 0;
     width: 270px;
     height: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .cards__item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__item:last-child {
+    margin-right: 0;
   }
 }
 

@@ -22,20 +22,25 @@
   @extend %list;    
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  justify-content: center;
+  @include tablet {
+    gap: 30px;
+  }
   @include dekstop {
     flex-wrap: nowrap;
   }
 }
+
 .cards__item {
   @media screen and (min-width: 479px), (max-width: 767px) {
     margin-bottom: 30px;
   }
   @include tablet {
-    margin: 15px;
     width: 354px;
+    margin-bottom: 0;
   }
   @include dekstop {
+    margin-bottom: 0;
     width: 270px;
     height: 100%;
   }
@@ -47,7 +52,15 @@
   //   margin-right: 30px;
   // }
 }
-
+.cards__item:last-child {
+  @include mobile {
+    margin-bottom: 0;
+  
+  }
+  @include dekstop {
+    margin-right: 0;
+  }
+}
 .worker {
   padding: 30px 0;
 }
