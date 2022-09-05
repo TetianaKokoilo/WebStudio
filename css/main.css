@@ -1467,9 +1467,16 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .customers__title {
   margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -1477,9 +1484,9 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .customers__title {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 

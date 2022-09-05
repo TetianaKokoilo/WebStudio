@@ -1,14 +1,17 @@
 .customers {
   padding-top: 60px;
   padding-bottom: 60px;
+  @include dekstop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .customers__title {
   margin-top: 0;
-  @include mobile {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  @include dekstop {
+    margin-bottom: 50px;
   }
-  // margin-bottom: 50px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
