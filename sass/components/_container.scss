@@ -4,17 +4,17 @@
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid $outline-color;
+  // outline: 2px solid $outline-color;
     @include mobile {
-      width: 480px;
+      max-width: 480px;
     }
   
     @include tablet {
-      width: 768px;
+      max-width: 768px;
     }
   
     @include dekstop {
-      width: 1200px;
+      max-width: 1200px;
     }
 
   .main & {
@@ -27,6 +27,7 @@
       display: flex;
       flex-wrap: wrap;
       align-content: space-around;
+      align-items: baseline;
     }
     @include dekstop {
       display: flex;
@@ -52,7 +53,7 @@
 }
 
 .container--padding {
-  padding-left: 40px;
+  // padding: 48px 40px;
   // padding-right: 40px;
 }
 

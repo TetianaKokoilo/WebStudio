@@ -35,14 +35,18 @@
   height: 100vh;
   background-color: $background-color;
   top: 0;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
   & .container {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
     overflow: auto;
+    padding-left: 0;
+    padding-right: 0;
   }
   transform: translate(0%, 0%) scale(1);
   transition: visibility $transition-duration $transition-timing-function, 
@@ -56,7 +60,7 @@
 }
 
 .menu-close {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-bottom: 8px;
   padding: 0;

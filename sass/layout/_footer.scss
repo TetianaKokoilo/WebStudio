@@ -67,7 +67,9 @@
 .join {
   margin-bottom: 60px;
   @include tablet {
-    padding-top: 12px;
+    margin-bottom: 0;
+    margin-left: auto;
+    // padding-top: 12px;
   }
   @include dekstop {
     margin-right: 70px;  
@@ -121,4 +123,14 @@
   // align-items: center;
   // justify-content: center;
   // margin-left: 93px;
+}
+.info {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  margin-bottom: 60px;
+  @include tablet {
+
+  }
 }

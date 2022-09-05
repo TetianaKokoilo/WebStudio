@@ -21,8 +21,10 @@
 .contact {
   @extend %link;
   display: flex;
+  @include tablet {
+    
+  }
   @include dekstop {
-  padding: 32px 0;
   font-size: 14px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -39,6 +41,18 @@
   &:hover,
   &:focus {    
     color: $accent-color;
+  }
+}
+.contact--email {
+  padding-top: 5px;
+  @include dekstop {
+    padding-top: 0;
+  }
+}
+.contact--tel {
+  padding-bottom: 5px;
+  @include dekstop {
+    padding-bottom: 5px;
   }
 }
 .contact__icon {
