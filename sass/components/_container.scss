@@ -4,7 +4,7 @@
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  // outline: 2px solid $outline-color;
+  outline: 2px solid $outline-color;
     @include mobile {
       width: 480px;
     }
@@ -38,6 +38,7 @@
 .container--page-studia {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .container--page-header {
   display: flex;
@@ -45,6 +46,7 @@
 }
 
 .container--page-container {
+
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -53,3 +55,4 @@
   padding-left: 40px;
   // padding-right: 40px;
 }
+

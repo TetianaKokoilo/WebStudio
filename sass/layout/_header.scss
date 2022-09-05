@@ -8,8 +8,8 @@
 // }
 
 .menu-open {
-  display: block;
-  margin-left: auto;
+  // display: block;
+  // margin-left: auto;
   padding: 0;
   border: none;
   background-color: $background-color;
@@ -53,13 +53,13 @@
   @include dekstop {
     display: none;
   }
-  
 }
 
 .menu-close {
   display: block;
   margin-left: auto;
   margin-bottom: 8px;
+  padding: 0;
   border: none;
   background-color: $background-color;
   cursor: pointer;

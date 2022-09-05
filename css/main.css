@@ -360,6 +360,7 @@ img {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 2px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -397,6 +398,7 @@ img {
 .container--page-studia {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .container--page-header {
@@ -830,8 +832,6 @@ img {
 }
 
 .menu-open {
-  display: block;
-  margin-left: auto;
   padding: 0;
   border: none;
   background-color: #ffffff;
@@ -882,6 +882,7 @@ img {
   display: block;
   margin-left: auto;
   margin-bottom: 8px;
+  padding: 0;
   border: none;
   background-color: #ffffff;
   cursor: pointer;
