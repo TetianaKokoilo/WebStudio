@@ -520,8 +520,9 @@
             <use href="./images/sprite-modal.svg#icon-close-black"></use>
           </svg>
         </button>
-        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
-        <form class="data" autocomplete="off">
+        <div class="service">
+          <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="data">
           <div class="field">
             <label for="name" class="field__label"> Ім'я </label>
             <input type="text" name="name" class="field__input" id="name" />
@@ -545,21 +546,10 @@
           </div>
           <div class="field">
             <label for="comment" class="field__label"> Коментар </label>
-            <textarea
-              class="field__text"
-              name="comment"
-              id="comment"
-              placeholder="Введіть текст"
-            ></textarea>
+            <textarea class="field__text" name="comment" id="comment" placeholder="Введіть текст"></textarea>
           </div>
           <div class="checkbox">
-            <input
-              class="checkbox__input"
-              type="checkbox"
-              name="checkbox"
-              id="agree"
-              value="agree"
-            />
+            <input class="checkbox__input" type="checkbox" name="checkbox" id="agree" value="agree" />
             <label class="label" for="agree">
               <svg class="label__icon" width="16" height="15">
                 <use href="./images/icon.svg"></use>
@@ -570,6 +560,7 @@
           </div>
           <button type="submit" class="data__button">Відправити</button>
         </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
