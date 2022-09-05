@@ -524,7 +524,7 @@ img {
 }
 
 .header__web {
-  padding: 24px 0;
+  padding: 16px 0;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -532,6 +532,16 @@ img {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .header__web {
+    padding: 26px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__web {
+    padding: 24px 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header__web {
@@ -541,7 +551,7 @@ img {
 }
 
 .header__studio {
-  padding: 24px 0;
+  padding: 16px 0;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -549,6 +559,16 @@ img {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 768px) {
+  .header__studio {
+    padding: 26px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__studio {
+    padding: 24px 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header__studio {

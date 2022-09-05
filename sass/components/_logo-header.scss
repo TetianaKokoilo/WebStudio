@@ -1,6 +1,12 @@
 .header__web {
   @extend %link;
-  padding: 24px 0;
+  padding: 16px 0;
+  @include tablet {
+    padding: 26px 0;
+  }
+  @include dekstop {
+    padding: 24px 0;
+  }
 
   font-family: 'Raleway';
   font-style: normal;
@@ -16,8 +22,13 @@
   
 }
 .header__studio {
-  padding: 24px 0;
-
+  padding: 16px 0;
+  @include tablet {
+    padding: 26px 0;
+  }
+  @include dekstop {
+    padding: 24px 0;
+  }
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
