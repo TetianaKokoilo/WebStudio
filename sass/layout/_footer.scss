@@ -11,6 +11,7 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+
   @include dekstop {
     display: block;
   }
@@ -117,11 +118,15 @@
   margin-left: auto;
   margin-right: auto;  
 }
+@include dekstop {
+  margin-left: 0;
+  margin-right: 0;
   // width: 570px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // margin-left: 93px;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   margin-left: 93px;
+}
 }
 .info {
   display: inline-flex;

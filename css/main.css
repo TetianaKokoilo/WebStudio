@@ -391,6 +391,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer .container {
     display: flex;
+    flex-wrap: nowrap;
   }
 }
 
@@ -471,22 +472,32 @@ img {
   bottom: 0;
 }
 
-.logo {
-  margin-bottom: 60px;
+@media screen and (min-width: 768px) {
+  .association {
+    display: flex;
+    align-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .logo {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .logo {
     display: inline-block;
-    margin-bottom: 60px;
-    margin-left: 75px;
-    margin-right: 165px;
+    padding-left: 76px;
+    padding-right: 165px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .logo {
-    margin-left: 0px;
+    padding-left: 0;
+    padding-right: 0;
     margin-right: 70px;
-    margin-bottom: 0;
   }
 }
 
@@ -1716,6 +1727,12 @@ img {
     margin-right: auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 .info {
   display: inline-flex;
@@ -1789,12 +1806,14 @@ img {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .newsletter__email {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 

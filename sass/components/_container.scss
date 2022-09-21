@@ -31,6 +31,7 @@
     }
     @include dekstop {
       display: flex;
+      flex-wrap: nowrap;
     }
   }
   

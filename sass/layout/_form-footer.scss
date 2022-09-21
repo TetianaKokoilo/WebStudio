@@ -54,11 +54,13 @@
     width: 450px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 
   }
   @include dekstop {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
