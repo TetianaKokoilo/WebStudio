@@ -855,7 +855,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .contact--email {
-    padding-top: 21px;
+    padding-top: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -865,9 +865,12 @@ img {
   }
 }
 
+.contact--tel {
+  padding-bottom: 5px;
+}
 @media screen and (min-width: 768px) {
   .contact--tel {
-    padding-bottom: 21px;
+    padding-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1411,6 +1414,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+  }
 }
 
 .cards {

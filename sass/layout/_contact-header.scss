@@ -46,7 +46,7 @@
 .contact--email {
   padding-top: 5px;
   @include tablet {
-    padding-top: 21px;
+    padding-top: 20px;
   }
   @include dekstop {
     padding-top: 32px;
@@ -54,9 +54,9 @@
   }
 }
 .contact--tel {
-  // padding-bottom: 5px;
+  padding-bottom: 5px;
   @include tablet {
-    padding-bottom: 21px;
+    padding-bottom: 20px;
   }
   @include dekstop {
     padding-top: 32px;
