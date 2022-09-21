@@ -45,14 +45,22 @@
 }
 .contact--email {
   padding-top: 5px;
+  @include tablet {
+    padding-top: 21px;
+  }
   @include dekstop {
-    padding-top: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .contact--tel {
-  padding-bottom: 5px;
+  // padding-bottom: 5px;
+  @include tablet {
+    padding-bottom: 21px;
+  }
   @include dekstop {
-    padding-bottom: 5px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .contact__icon {

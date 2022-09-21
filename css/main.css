@@ -853,18 +853,27 @@ img {
 .contact--email {
   padding-top: 5px;
 }
+@media screen and (min-width: 768px) {
+  .contact--email {
+    padding-top: 21px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contact--email {
-    padding-top: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
-.contact--tel {
-  padding-bottom: 5px;
+@media screen and (min-width: 768px) {
+  .contact--tel {
+    padding-bottom: 21px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contact--tel {
-    padding-bottom: 5px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
