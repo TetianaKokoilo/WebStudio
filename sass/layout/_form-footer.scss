@@ -21,7 +21,6 @@
   text-transform: uppercase;
   color: $main-title-color;
   @include tablet {
-    width: 450px;
   }
   @include dekstop {
     justify-content: flex-start;
@@ -36,8 +35,6 @@
 }
 .newsletter__email {
   width: 100%;
-  margin-bottom: 20px;
-  // width: 358px;
   height: 50px;
   padding-left: 16px;
   padding-top: 15px;

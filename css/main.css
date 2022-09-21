@@ -505,7 +505,6 @@ img {
 @media screen and (min-width: 1200px) {
   .logo__web {
     text-align: start;
-    width: 45px;
   }
 }
 
@@ -548,7 +547,6 @@ img {
 }
 
 .header__studio {
-  padding: 16px 0;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -556,16 +554,6 @@ img {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #212121;
-}
-@media screen and (min-width: 768px) {
-  .header__studio {
-    padding: 26px 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__studio {
-    padding: 24px 0;
-  }
 }
 @media screen and (min-width: 1200px) {
   .header__studio {
@@ -1678,7 +1666,6 @@ img {
 @media screen and (min-width: 768px) {
   .join {
     margin-bottom: 0;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1765,11 +1752,6 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media screen and (min-width: 768px) {
-  .form__title {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .form__title {
     justify-content: flex-start;
@@ -1787,7 +1769,6 @@ img {
 
 .newsletter__email {
   width: 100%;
-  margin-bottom: 20px;
   height: 50px;
   padding-left: 16px;
   padding-top: 15px;
