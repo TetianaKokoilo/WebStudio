@@ -7,6 +7,10 @@
   }
 }
 .card__item {
+  margin-bottom: 30px;
+  @include mobile {
+    margin-bottom: 30px;
+  }
   @include tablet {
   width: calc((100% - 2 * 30px) / 2);
   margin-right: auto;
@@ -21,6 +25,7 @@
     opasity $transition-duration $transition-timing-function;
 }
 .card__item:last-child {
+  margin: 0;
   @include tablet {
     margin-bottom: 0;
   }
@@ -49,7 +54,7 @@
 }
 .overlay {
   display: flex;
-  align-items: center;
+  // align-items: center;
   padding: 63px 24px;
 
   position: absolute;
