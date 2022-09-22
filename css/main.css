@@ -293,7 +293,7 @@ img {
 
 .projects {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 @media screen and (min-width: 1200px) {
   .projects {
@@ -322,6 +322,7 @@ img {
 
 .portfolio__item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 .portfolio__item:last-child {
   margin: 0;
@@ -404,6 +405,7 @@ img {
 .container--page-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .container--page-container {
@@ -585,8 +587,9 @@ img {
 }
 @media screen and (min-width: 480px) {
   .backdrop {
+    width: 96%;
+    height: 98%;
     padding: 93px 15px;
-    overflow-y: scroll;
   }
 }
 

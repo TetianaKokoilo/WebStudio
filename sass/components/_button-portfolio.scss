@@ -1,6 +1,6 @@
 .projects {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   @include dekstop {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -23,7 +23,7 @@
 }
 .portfolio__item {
   margin-right: 8px;
-  // margin-right: 8px;
+  margin-bottom: 15px;
   &:last-child {
     margin: 0;
   }
