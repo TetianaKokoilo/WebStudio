@@ -27,6 +27,15 @@
   &:last-child {
     margin: 0;
   }
+  @include mobile {
+    margin-right: 15px;
+  }
+  @include tablet {
+    margin-right: 8px;
+  }
+  @include dekstop {
+    margin-right: 8px;
+  }
 }
 
 .portfolio__btn {
