@@ -69,6 +69,7 @@
   margin-bottom: 60px;
   @include tablet {
     margin-bottom: 0;
+    margin-right: 60px;
     // padding-top: 12px;
   }
   @include dekstop {

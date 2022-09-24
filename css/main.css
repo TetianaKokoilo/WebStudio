@@ -501,8 +501,8 @@ img {
 @media screen and (min-width: 768px) {
   .logo {
     display: inline-block;
-    padding-left: 76px;
-    padding-right: 165px;
+    margin-left: 76px;
+    margin-right: 165px;
     margin-bottom: 0;
   }
 }
@@ -1703,6 +1703,7 @@ img {
 @media screen and (min-width: 768px) {
   .join {
     margin-bottom: 0;
+    margin-right: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
