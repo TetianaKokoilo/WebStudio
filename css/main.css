@@ -1025,6 +1025,11 @@ img {
 .mob-menu-tel:hover, .mob-menu-tel:focus {
   color: #2196f3;
 }
+@media screen and (max-width: 479px) {
+  .mob-menu-tel {
+    font-size: 20px;
+  }
+}
 
 .mob-menu-email {
   font-weight: 500;
@@ -1037,6 +1042,11 @@ img {
 .mob-menu-email:hover, .mob-menu-email:focus {
   color: #2196f3;
 }
+@media screen and (max-width: 479px) {
+  .mob-menu-email {
+    font-size: 20px;
+  }
+}
 
 .mob-menu-site {
   display: flex;
@@ -1048,6 +1058,11 @@ img {
   padding-right: 10px;
   margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+@media screen and (max-width: 479px) {
+  .mob-menu-site__item {
+    margin-bottom: 10px;
+  }
 }
 
 .mob-menu-site__link {

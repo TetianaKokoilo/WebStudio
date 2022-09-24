@@ -119,6 +119,9 @@
   &:focus {
     color: $accent-color;
   }
+  @media screen and (max-width: 479px){
+    font-size: 20px;
+  }
 }
 .mob-menu-email {
   @extend %link;
@@ -131,6 +134,9 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 20px;
   }
 }
 
@@ -146,6 +152,9 @@
   padding-right: 10px;
   margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, .2);
+  }
+  @media screen and (max-width: 479px) {
+    margin-bottom: 10px;
   }
   
 }
