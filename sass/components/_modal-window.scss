@@ -57,6 +57,7 @@
   cursor: pointer;
   transition: border $transition-duration $transition-timing-function,
   fill $transition-duration $transition-timing-function;
+  background: transparent;
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
