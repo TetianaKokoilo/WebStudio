@@ -43,6 +43,9 @@
   border: 1px solid $svg-color;
   border-radius: 4px;
   fill: $svg-color;
+  @media screen and (max-width: 479px) {
+    width: 130px;
+  }
   @include tablet {
     width: 226px;
   }
