@@ -360,6 +360,7 @@ img {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 2px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -393,6 +394,8 @@ img {
   .footer .container {
     display: flex;
     flex-wrap: nowrap;
+    align-items: unset;
+    justify-content: space-between;
   }
 }
 
@@ -481,6 +484,11 @@ img {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .association {
+    margin-bottom: 0;
+  }
+}
 
 .logo {
   margin-bottom: 60px;
@@ -500,6 +508,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .logo {
+    display: flex;
+    flex-direction: column;
     padding-left: 0;
     padding-right: 0;
     margin-right: 70px;
@@ -1697,7 +1707,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .join {
-    margin-right: 70px;
+    margin-right: 90px;
   }
 }
 

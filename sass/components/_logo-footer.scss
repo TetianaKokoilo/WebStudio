@@ -3,6 +3,9 @@
         display: flex;
         align-content: space-around;
         margin-bottom: 60px;
+    @include dekstop {
+        margin-bottom: 0;
+    }
 
     }
     
@@ -19,6 +22,8 @@
         margin-bottom: 0;
     }
     @include dekstop {
+        display: flex;
+        flex-direction: column;
         padding-left: 0;
         padding-right: 0;
         margin-right: 70px;

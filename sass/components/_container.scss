@@ -4,7 +4,7 @@
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  // outline: 2px solid $outline-color;
+  outline: 2px solid $outline-color;
     @include mobile {
       max-width: 480px;
     }
@@ -32,6 +32,9 @@
     @include dekstop {
       display: flex;
       flex-wrap: nowrap;
+      align-items: unset;
+      justify-content: space-between;
+
     }
   }
   
